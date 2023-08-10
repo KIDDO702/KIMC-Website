@@ -1,0 +1,36 @@
+/* CSS HEX */
+--venice-blue: #0b5d91;
+--malibu: #84c9f8;
+--iron: #e2e5e6;
+--copper-rust: #87464f;
+--clay-creek: #83835d;
+--pewter: #94a89d;
+--lynch: #667b90;
+--shakespeare: #50afd7;
+--picton-blue: #31bef4;
+
+
+/* SCSS HEX */
+$venice-blue: #0b5d91;
+$malibu: #84c9f8;
+$iron: #e2e5e6;
+$copper-rust: #87464f;
+$clay-creek: #83835d;
+$pewter: #94a89d;
+$lynch: #667b90;
+$shakespeare: #50afd7;
+$picton-blue: #31bef4;
+
+
+/* SCSS RGB */
+--venice-blue: rgba(11,93,145,1);
+--malibu: rgba(132,201,248,1);
+--iron: rgba(226,229,230,1);
+--copper-rust: rgba(135,70,79,1);
+--clay-creek: rgba(131,131,93,1);
+--pewter: rgba(148,168,157,1);
+--lynch: rgba(102,123,144,1);
+--shakespeare: rgba(80,175,215,1);
+--picton-blue: rgba(49,190,244,1);
+
+
