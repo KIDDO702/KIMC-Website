@@ -69,7 +69,7 @@
             <SplideSlide class="relative">
                 <img src="hero/slide4.jpg" alt="hero-1" class="min-h-[550px]">
                 <div class="absolute inset-0 bg-blue-dark bg-opacity-20 flex items-center justify-end">
-                    <div class="bg-blue-secondary text-white rounded-l-md md:w-[50%] mt-80 py-5 px-6 bg-opacity-70">
+                    <div class="bg-blue-tertiary text-white rounded-l-md md:w-[50%] mt-80 py-5 px-6 bg-opacity-70">
                         <h2 class="text-2xl md:text-3xl font-semibold uppercase">Senior Management</h2>
                         <p class="mt-2 font-light text-sm md:text-base">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, doloribus aspernatur dignissimos quaerat eius, nam provident sequi odio tenetur magnam beatae!   Perspiciatis porro cupiditate soluta culpa commodi iusto! In, minima.
@@ -84,6 +84,170 @@
         </SplideTrack>
     </Splide>
 
+    <section class="py-20">
+        <div class="container px-4 lg:px-0 lg:flex lg:space-x-10">
+            <div class="w-full lg:w-[55%]">
+                <h3 class="font-bold text-2xl tracking-[2px]">About <span class="text-blue-secondary">Us</span></h3>
+                <p class="my-4 leading-7 lg:leading-loose">
+                    The Kenya Institute of Mass Communication (KIMC) was established in 1961 and was named as the then Voice of Kenya Training School.
+
+                    Its main purpose was to train electronic engineering and technicians for the then, Kenya Broadcasting Service (KBS), that was later rebranded in 1962 as the Kenya Broadcasting Corporation (KBC). KBC was then nationalized in 1964, and changed its brand to Voice of Kenya (VOK).
+                    Nationalization occasioned the departure of expatriates who worked at the broadcaster, creating an urgent need for qualified manpower to fill the vacant positions. In 1965, the new Voice of Kenya acquired a grant to start what became to be known as the Voice of Kenya Training School.
+                </p>
+
+                <div>
+                    <a href="#" class="text-blue-primary flex items-center space-x-3 hover:text-blue-secondary">
+                        <span>Read More</span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-3">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="w-full mt-5 relative lg:mt-0 lg:w-[45%]">
+                <img src="about-2.JPG" alt="about-image" class="rounded drop-shadow-md transition hover:scale-95">
+                <div class="absolute inset-0 bg-black rounded bg-opacity-40"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white py-20">
+        <div class="container">
+            <div class="text-center w-full">
+                <h2 class="text-2xl font-bold tracking-[2px]">Popular <span class="text-blue-secondary">Courses</span></h2>
+            </div>
+
+            <div class="grid grid-cols-3 gap-5 my-16">
+                <div class="group bg-gray-light drop-shadow-md rounded transition overflow-hidden hover:shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="course/film.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Journalism</h4>
+
+                        <div class="my-3 space-y-1.5">
+                            <p class="text-sm">
+                                <span class="font-semibold">Training Department: </span>
+                                <span>Information</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Examiner: </span>
+                                <span>Kenya Institute Of Mass Communication</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Period: </span>
+                                <span>Three Years</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Level: </span>
+                                <span>Diploma</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Intakes: </span>
+                                <span>January</span>
+                            </p>
+                        </div>
+
+                        <hr class="my-1 border-gray-300">
+                        <div class="mt-5">
+                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="course/TV-Radio.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in TV Programmes Production</h4>
+
+                        <div class="my-3 space-y-1.5">
+                            <p class="text-sm">
+                                <span class="font-semibold">Training Department: </span>
+                                <span>TV/Radio Programme Production</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Examiner: </span>
+                                <span>Kenya Institute Of Mass Communication</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Period: </span>
+                                <span>Three Years</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Level: </span>
+                                <span>Diploma</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Intakes: </span>
+                                <span>January</span>
+                            </p>
+                        </div>
+
+                        <hr class="my-1 border-gray-300">
+                        <div class="mt-5">
+                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
+                    <div class="relative overflow-hidden">
+                        <img src="course/video.jpg" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Film/ Video Program Production</h4>
+
+                        <div class="my-3 space-y-1.5">
+                            <p class="text-sm">
+                                <span class="font-semibold">Training Department: </span>
+                                <span>Information</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Examiner: </span>
+                                <span>Kenya Institute Of Mass Communication</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Period: </span>
+                                <span>Three Years</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Level: </span>
+                                <span>Diploma</span>
+                            </p>
+
+                            <p class="text-sm">
+                                <span class="font-semibold">Intakes: </span>
+                                <span>January</span>
+                            </p>
+                        </div>
+
+                        <hr class="my-1 border-gray-300">
+                        <div class="mt-5">
+                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <a href="#" class="bg-blue-secondary text-gray-light px-4 py-2.5 hover:bg-blue-tertiary">View More</a>
+            </div>
+        </div>
+    </section>
     <Footer></Footer>
 </template>
 
