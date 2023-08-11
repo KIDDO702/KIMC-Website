@@ -1,15 +1,17 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <Navigation />
+  <Footer />
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
+
+<script>
+  import Navigation from '../components/Navigation.vue';
+  import Footer from '../components/Footer.vue';
+
+  export default {
+    components: {
+      Navigation, 
+      Footer
+    }
   }
-}
-</style>
+</script>
