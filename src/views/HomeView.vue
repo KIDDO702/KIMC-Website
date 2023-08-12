@@ -1,7 +1,7 @@
 <template>
     <Navigation />
 
-    <Splide :tag="section" :options="options" :has-track="false">
+    <Splide :tag="section" :options="herOption" :has-track="false">
         <div class="splide__progress">
             <div class="splide__progress__bar" />
         </div>
@@ -85,7 +85,7 @@
     </Splide>
 
     <section class="py-20">
-        <div class="container px-4 lg:px-0 lg:flex lg:space-x-10">
+        <div class="container px-4 lg:px-3 lg:flex lg:space-x-10">
             <div class="w-full lg:w-[55%]">
                 <h3 class="font-bold text-2xl tracking-[2px]">About <span class="text-blue-secondary">Us</span></h3>
                 <p class="my-4 leading-7 lg:leading-loose">
@@ -104,151 +104,206 @@
                     </a>
                 </div>
             </div>
-            <div class="w-full mt-5 relative lg:mt-0 lg:w-[45%]">
-                <img src="about-2.JPG" alt="about-image" class="rounded drop-shadow-md transition hover:scale-95">
+            <div class="group w-full mt-5 relative lg:mt-0 lg:w-[45%] overflow-hidden">
+                <img src="about-2.jpg" alt="about-image" class="rounded drop-shadow-md transition-all group-hover:scale-110">
                 <div class="absolute inset-0 bg-black rounded bg-opacity-40"></div>
             </div>
         </div>
     </section>
 
     <section class="bg-white py-20">
-        <div class="container">
-            <div class="text-center w-full">
-                <h2 class="text-2xl font-bold tracking-[2px]">Popular <span class="text-blue-secondary">Courses</span></h2>
-            </div>
-
-            <div class="grid grid-cols-3 gap-5 my-16">
-                <div class="group bg-gray-light drop-shadow-md rounded transition overflow-hidden hover:shadow-lg">
-                    <div class="relative overflow-hidden">
-                        <img src="course/film.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
-                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Journalism</h4>
-
-                        <div class="my-3 space-y-1.5">
-                            <p class="text-sm">
-                                <span class="font-semibold">Training Department: </span>
-                                <span>Information</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Examiner: </span>
-                                <span>Kenya Institute Of Mass Communication</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Period: </span>
-                                <span>Three Years</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Level: </span>
-                                <span>Diploma</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Intakes: </span>
-                                <span>January</span>
-                            </p>
-                        </div>
-
-                        <hr class="my-1 border-gray-300">
-                        <div class="mt-5">
-                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
-                    <div class="relative overflow-hidden">
-                        <img src="course/TV-Radio.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
-                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in TV Programmes Production</h4>
-
-                        <div class="my-3 space-y-1.5">
-                            <p class="text-sm">
-                                <span class="font-semibold">Training Department: </span>
-                                <span>TV/Radio Programme Production</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Examiner: </span>
-                                <span>Kenya Institute Of Mass Communication</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Period: </span>
-                                <span>Three Years</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Level: </span>
-                                <span>Diploma</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Intakes: </span>
-                                <span>January</span>
-                            </p>
-                        </div>
-
-                        <hr class="my-1 border-gray-300">
-                        <div class="mt-5">
-                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
-                    <div class="relative overflow-hidden">
-                        <img src="course/video.jpg" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
-                        <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
-                    </div>
-                    <div class="p-5">
-                        <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Film/ Video Program Production</h4>
-
-                        <div class="my-3 space-y-1.5">
-                            <p class="text-sm">
-                                <span class="font-semibold">Training Department: </span>
-                                <span>Information</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Examiner: </span>
-                                <span>Kenya Institute Of Mass Communication</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Period: </span>
-                                <span>Three Years</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Level: </span>
-                                <span>Diploma</span>
-                            </p>
-
-                            <p class="text-sm">
-                                <span class="font-semibold">Intakes: </span>
-                                <span>January</span>
-                            </p>
-                        </div>
-
-                        <hr class="my-1 border-gray-300">
-                        <div class="mt-5">
-                            <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
-                        </div>
-                    </div>
+        <div class="container px-3">
+            <div class="text-center w-full flex items-center justify-center">
+                <div class="md:w-[70%]">
+                    <h2 class="text-3xl uppercase font-bold">Popular <span class="text-blue-secondary">Courses</span></h2>
+                    <p class="mt-3 text-gray-500">
+                        We offer a range of courses that cover topics such as journalism, broadcasting, digital media, photography, and more. Whether you are a beginner or an experienced professional, you will find a course that suits your needs and goals.
+                    </p>
                 </div>
             </div>
 
+            <Splide :tag="div" :options="courseOption" class="flex items-center my-10 md:my-16">
+                <SplideSlide class="group bg-gray-light drop-shadow-md rounded transition overflow-hidden hover:shadow-lg">
+                    <div>
+                        <div class="relative overflow-hidden">
+                            <img src="course/film.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Journalism</h4>
+
+                            <div class="my-3 space-y-1.5">
+                                <p class="text-sm">
+                                    <span class="font-semibold">Training Department: </span>
+                                    <span>Information Training Department</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Examiner: </span>
+                                    <span>Kenya Institute Of Mass Communication</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Period: </span>
+                                    <span>Three Years</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Level: </span>
+                                    <span>Diploma</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Intakes: </span>
+                                    <span>January</span>
+                                </p>
+                            </div>
+
+                            <hr class="my-1 border-gray-300">
+                            <div class="mt-5">
+                                <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </SplideSlide>
+                <SplideSlide class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
+                    <div>
+                        <div class="relative overflow-hidden">
+                            <img src="course/TV-Radio.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in TV Programmes Production</h4>
+
+                            <div class="my-3 space-y-1.5">
+                                <p class="text-sm">
+                                    <span class="font-semibold">Training Department: </span>
+                                    <span>TV/Radio Programme Production</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Examiner: </span>
+                                    <span>Kenya Institute Of Mass Communication</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Period: </span>
+                                    <span>Three Years</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Level: </span>
+                                    <span>Diploma</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Intakes: </span>
+                                    <span>January</span>
+                                </p>
+                            </div>
+
+                            <hr class="my-1 border-gray-300">
+                            <div class="mt-5">
+                                <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </SplideSlide>
+                <SplideSlide class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
+                    <div>
+                        <div class="relative overflow-hidden">
+                            <img src="course/video.jpg" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Film/ Video Program Production</h4>
+
+                            <div class="my-3 space-y-1.5">
+                                <p class="text-sm">
+                                    <span class="font-semibold">Training Department: </span>
+                                    <span>Information</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Examiner: </span>
+                                    <span>Kenya Institute Of Mass Communication</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Period: </span>
+                                    <span>Three Years</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Level: </span>
+                                    <span>Diploma</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Intakes: </span>
+                                    <span>January</span>
+                                </p>
+                            </div>
+
+                            <hr class="my-1 border-gray-300">
+                            <div class="mt-5">
+                                <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </SplideSlide>
+                <SplideSlide class="group bg-gray-light drop-shadow-md rounded transition-all overflow-hidden hover:shadow-lg">
+                    <div>
+                        <div class="relative overflow-hidden">
+                            <img src="course/media-tech.JPG" alt="film-1" class="rounded-t transition-all group-hover:scale-125">
+                            <div class="absolute inset-0 bg-black bg-opacity-40 rounded-t"></div>
+                        </div>
+                        <div class="p-5">
+                            <h4 class="uppercase text-xl font-bold tracking-[1px]">Diploma in Media Technology</h4>
+
+                            <div class="my-3 space-y-1.5">
+                                <p class="text-sm">
+                                    <span class="font-semibold">Training Department: </span>
+                                    <span>Engineering Training Department</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Examiner: </span>
+                                    <span>Kenya Institute Of Mass Communication</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Period: </span>
+                                    <span>Three Years</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Level: </span>
+                                    <span>Diploma</span>
+                                </p>
+
+                                <p class="text-sm">
+                                    <span class="font-semibold">Intakes: </span>
+                                    <span>January</span>
+                                </p>
+                            </div>
+
+                            <hr class="my-1 border-gray-300">
+                            <div class="mt-5">
+                                <a href="#" class="bg-blue-secondary py-2 text-sm px-3 text-gray-light font-semibold group-hover:bg-blue-tertiary">Apply</a>
+                            </div>
+                        </div>
+                    </div>
+                </SplideSlide>
+            </Splide>
             <div class="text-center">
                 <a href="#" class="bg-blue-secondary text-gray-light px-4 py-2.5 hover:bg-blue-tertiary">View More</a>
             </div>
         </div>
     </section>
-    <Footer></Footer>
+
+
+    <Footer />
 </template>
 
 
@@ -267,7 +322,7 @@
         },
 
         setup() {
-            const options = {
+            const herOption = {
                 rewind: true,
                 rewindSpeed: 1000,
                 autoplay: true,
@@ -275,8 +330,28 @@
                 pauseOnHover: false,
                 pauseOnFocus: false
             };
+
+            const courseOption = {
+                type: 'loop',
+                perPage: 3,
+                perMove: 1,
+                gap: 25,
+                speed: 400,
+                autoplay: true,
+                interval: 15000,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                breakpoints: {
+                    640: {
+                        perPage: 1
+                    },
+                    1024: {
+                        perPage: 2
+                    }
+                }
+            };
             return {
-                options
+                herOption, courseOption
             }
         }
     }
