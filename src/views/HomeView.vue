@@ -97,12 +97,12 @@
                 </p>
 
                 <div>
-                    <a href="#" class="text-blue-secondary flex items-center space-x-3 hover:text-blue-primary">
+                    <RouterLink to="/about/history" class="text-blue-secondary flex items-center space-x-3 hover:text-blue-primary">
                         <span>Read More</span> 
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-3">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
                         </svg>
-                    </a>
+                    </RouterLink>
                 </div>
             </div>
             <div class="group w-full mt-5 relative lg:mt-0 lg:w-[50%] overflow-hidden">
@@ -611,14 +611,14 @@
                 <h3 class="text-center text-3xl font-bold uppercase text-blue-secondary">Collaborations</h3>
             </div>
 
-            <div>
-                <ul class="flex items-center justify-center my-16">
-                    <li>
+            <div class="flex justify-center mt-16 px-5">
+                <ul class="flex items-center justify-center md:space-x-10">
+                    <li class="md:w-[85%]">
                         <a href="#">
                             <img src="collaboration/UON-LOGO.png" class="w-[30%]">
                         </a>
                     </li>
-                    <li>
+                    <li class="w-[65%]">
                         <a href="#">
                             <img src="collaboration/22-catholic-university-of-eastern-africa.png" class="">
                         </a>

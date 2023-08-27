@@ -2,28 +2,70 @@
     <nav class="sticky top-0 drop-shadow-md z-20">
         <div class="bg-blue-secondary py-1.5 flex items-center justify-center">
             <RouterLink to="/" class="w-[350px] md:w-[27%]">
-                <img src="logo.png" alt="logo">
+                <img src="https://kimc.ac.ke/images/sampledata/as002046/LOGO/logo.png" alt="logo">
             </RouterLink>
         </div>
 
-        <div class="bg-gray-light py-2.5">
+        <div class="bg-gray-light py-3">
             <ul class="text-lg hidden uppercase lg:flex lg:items-center lg:justify-center lg:space-x-32">
-                <li>
+                <li class="flex items-center justify-center">
                     <RouterLink to="/">Home</RouterLink>
                 </li>
-                <li>
-                    <RouterLink to="/">About</RouterLink>
+                <li class="flex items-center justify-center relative">
+                    <a class="cursor-pointer flex items-center" @click="toogleDropdown">
+                        <span class="mr-1.5">About Us</span> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-xs">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                        </svg>
+
+                    </a>
+                    <Transition name="menubar">
+                        <div class="w-[250px] absolute bg-gray-light top-0 mt-10 flex items-center justify-center" v-show="dropDown">
+                            <ul class="divide-y divide-gray-300">
+                                <li class="block w-full py-1.5 px-1">
+                                    <RouterLink to="/about/history" class="w-full hover:text-blue-dark">History</RouterLink>
+                                </li>
+                                <li class="block w-full py-1.5 px-1">
+                                    <a class="cursor-pointer w-full flex items-center hover:text-blue-dark" @click="toogleMenuDropDown">
+                                        <span class="mr-1.5">Management</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4 text-xs">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                        </svg>
+                                    </a>
+
+                                    <Transition name="menubar">
+                                        <div class="w-full bg-gray-light flex items-center justify-center" v-show="menuDropDown">
+                                            <ul class="divide-y divide-gray-300">
+                                                <li class="block py-1 px-3">
+                                                    <RouterLink to="/about/management/KIMC-Council" class="w-full hover:text-blue-dark">KIMC Council</RouterLink>
+                                                </li>
+                                                <li class="block py-1 px-3">
+                                                    <RouterLink to="/" class="w-full hover:text-blue-dark">Senior Management</RouterLink>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </Transition>
+                                </li>
+                                <li class="block w-full py-1.5 px-1">
+                                    <RouterLink to="/" class="w-full hover:text-blue-dark">Facilities & Amenities</RouterLink>
+                                </li>
+                                <li class="block w-full py-1.5 px-1">
+                                    <RouterLink to="/" class="w-full hover:text-blue-dark">Collaboration</RouterLink>
+                                </li>
+                            </ul>
+                        </div>
+                    </Transition>
                 </li>
-                <li>
+                <li class="flex items-center justify-center">
                     <RouterLink to="/">Academics</RouterLink>
                 </li>
-                <li>
+                <li class="flex items-center justify-center">
                     <RouterLink to="/">Students</RouterLink>
                 </li>
-                <li>
+                <li class="flex items-center justify-center">
                     <RouterLink to="/">Ecn Radio</RouterLink>
                 </li>
-                <li>
+                <li class="flex items-center justify-center">
                     <RouterLink to="/">Contact</RouterLink>
                 </li>
             </ul>
@@ -70,7 +112,10 @@
 
         data() {
             return {
-                menubar: false
+                menubar: false,
+                dropDown: false,
+                logo: 'logo.png',
+                menuDropDown: false
             }
         },
 
@@ -78,6 +123,14 @@
         methods: {
             toogleMenubar() {
                 this.menubar = !this.menubar;
+            },
+
+            toogleDropdown() {
+                this.dropDown = !this.dropDown;
+            },
+
+            toogleMenuDropDown () {
+                this.menuDropDown = !this.menuDropDown
             }
         }
     }
