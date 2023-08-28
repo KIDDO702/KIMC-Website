@@ -32,7 +32,6 @@
                                             <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
                                         </svg>
                                     </a>
-
                                     <Transition name="menubar">
                                         <div class="w-full bg-gray-light flex items-center justify-center" v-show="menuDropDown">
                                             <ul class="divide-y divide-gray-300">
@@ -40,18 +39,18 @@
                                                     <RouterLink to="/about/management/KIMC-Council" class="w-full hover:text-blue-dark">KIMC Council</RouterLink>
                                                 </li>
                                                 <li class="block py-1 px-3">
-                                                    <RouterLink to="/" class="w-full hover:text-blue-dark">Senior Management</RouterLink>
+                                                    <RouterLink to="/about/management/senior-management" class="w-full hover:text-blue-dark">Senior Management</RouterLink>
                                                 </li>
                                             </ul>
                                         </div>
                                     </Transition>
                                 </li>
                                 <li class="block w-full py-1.5 px-1">
-                                    <RouterLink to="/" class="w-full hover:text-blue-dark">Facilities & Amenities</RouterLink>
+                                    <RouterLink to="/about/facilities-&-amenities" class="w-full hover:text-blue-dark">Facilities & Amenities</RouterLink>
                                 </li>
-                                <li class="block w-full py-1.5 px-1">
+                                <!-- <li class="block w-full py-1.5 px-1">
                                     <RouterLink to="/" class="w-full hover:text-blue-dark">Collaboration</RouterLink>
-                                </li>
+                                </li> -->
                             </ul>
                         </div>
                     </Transition>
@@ -131,8 +130,23 @@
 
             toogleMenuDropDown () {
                 this.menuDropDown = !this.menuDropDown
+            },
+
+            handleClickOutside(event) {
+                if (this.$el && !this.$el.contains(event.target)) {
+                    this.dropDown = false;
+                }
             }
-        }
+        },
+
+        mounted() {
+            // Close the dropdown when clicked outside
+            window.addEventListener("click", this.handleClickOutside);
+        },
+
+        beforeDestroy() {
+            window.removeEventListener("click", this.handleClickOutside);
+        },
     }
 </script>
 

@@ -28,8 +28,18 @@ const router = createRouter({
               path: 'KIMC-Council',
               name: 'council',
               component: () => import('../views/about/management/KIMCouncilView.vue')
+            },
+            {
+              path: 'senior-management',
+              name: 'seniorManagement',
+              component: () => import('../views/about/management/SeniorManagementView.vue')
             }
           ]
+        },
+        {
+          path: 'facilities-&-amenities',
+          name: 'facilities',
+          component: () => import('../views/about/FacilitiesView.vue') 
         }
       ]
     },
